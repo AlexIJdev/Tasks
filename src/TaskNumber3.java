@@ -1,6 +1,6 @@
 
 // Напишите программу, которая выведет на экран "Hello Programming!" (без кавычек)
-// на 2 строках, по слову на каждой (см. пример вывода)
+// на 2 строках, по слову на каждой.
 
 public class TaskNumber3 {
     public static void main(String[] args) {
