@@ -7,11 +7,11 @@
 import java.util.Scanner;
 
 public class TaskNumber10 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner lineOne = new Scanner(System.in);
         int height = lineOne.nextInt();
         int heightCrawlUp = lineOne.nextInt();
         int heightCrawlDown = lineOne.nextInt();
-        System.out.println(((height - heightCrawlDown) - 1) / (heightCrawlUp - heightCrawlDown) +1);
+        System.out.println(((height - heightCrawlDown) - 1) / (heightCrawlUp - heightCrawlDown) + 1);
     }
 }

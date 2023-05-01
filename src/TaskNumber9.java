@@ -8,7 +8,7 @@
 import java.util.Scanner;
 
 public class TaskNumber9 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner lineOne = new Scanner(System.in);
         int speed = lineOne.nextInt();
         int time = lineOne.nextInt();

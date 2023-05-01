@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class TaskNumber5 {
+public class TaskNumber13 {
     public static void main(String[] args) {
         Scanner lineOne = new Scanner(System.in);
         int numberOne = lineOne.nextInt();

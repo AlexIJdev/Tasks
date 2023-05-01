@@ -4,7 +4,7 @@
 import java.util.Scanner;
 
 public class TaskNumber8 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner line = new Scanner(System.in);
         int randomNumber = line.nextInt();
         System.out.println((randomNumber / 100) + ((randomNumber % 100) / 10) + (randomNumber % 10));

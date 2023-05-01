@@ -8,7 +8,7 @@
 import java.util.Scanner;
 
 public class TaskNumber12 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner line = new Scanner(System.in);
         int number = line.nextInt();
         System.out.println("The next number for the number " + number + " is " + (number + 1) + ".");

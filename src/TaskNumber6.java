@@ -6,7 +6,7 @@
 import java.util.Scanner;
 
 public class TaskNumber6 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner line = new Scanner(System.in);
         int number = line.nextInt();
         System.out.println(((number - 1) % 2) + ((number) % 2) + ((number + 1) % 2) + number);
