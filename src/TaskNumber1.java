@@ -1,5 +1,9 @@
 
-//Напишите программу, которая выводит на экран строку  "Hello world!".
+// Напишите программу, которая выводит на экран строку  "Hello world!".
+//
+// Sample Input:
+// Sample Output:
+//      Hello world!
 
 public class TaskNumber1 {
     public static void main(String[] args) {

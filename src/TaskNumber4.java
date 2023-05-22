@@ -1,7 +1,12 @@
 
-//  Закомментируйте ненужные строки так, что бы в выводе получилось:
-//  "Я прекрасно понимаю разницу между System.out.println()
-//  и System.out.print(). А ты?"
+// Закомментируйте ненужные строки так, что бы в выводе получилось:
+// "Я прекрасно понимаю разницу между System.out.println()
+// и System.out.print(). А ты?"
+//
+// Sample Input:
+// Sample Output:
+//     Я прекрасно понимаю разницу между System.out.println()
+//     и System.out.print(). А ты?
 
 public class TaskNumber4 {
     public static void main(String[] args) {
