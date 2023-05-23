@@ -1,5 +1,15 @@
 
 // Дано трехзначное число. Найдите сумму его цифр.
+//
+// Sample Input:
+//      179
+// Sample Output:
+//      17
+//
+// Sample Input:
+//      300
+// Sample Output:
+//      3
 
 import java.util.Scanner;
 
