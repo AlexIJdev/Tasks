@@ -1,29 +1,21 @@
 
-// Длина Московской кольцевой автомобильной дороги —109 километров. Байкер Вася стартует с нулевого
-// километра МКАД и едет со скоростью v километров в час. На какой отметке он остановится через t часов?
-// Программа получает на вход значения v и t. Если v>0, то Вася движется в положительном направлении по
-// МКАД, если же значение v<0, то в отрицательном. Программа должна вывести целое число от 0 до 108 —
-// номер отметки, на которой остановится Вася.
-//
+// На одной строчке через пробел записаны два целых числа: длина и ширина прямоугольника.
+// Вычислите его площадь и периметр (именно в таком порядке). Результат выведите на разных строках.
+
 // Sample Input:
-//      60
-//      2
+//      5 10
 // Sample Output:
-//      11
-//
-// Sample Input:
-//      -1
-//      1
-// Sample Output:
-//      108
+//      50
+//      30
 
 import java.util.Scanner;
 
 public class TaskNumber9 {
     public static void main(String[] args) {
         Scanner lineOne = new Scanner(System.in);
-        int speed = lineOne.nextInt();
-        int time = lineOne.nextInt();
-        System.out.println((109 + ((speed * time) % 109)) % 109);
+        int numberOne = lineOne.nextInt();
+        int numberTwo = lineOne.nextInt();
+        System.out.println(numberOne * numberTwo);
+        System.out.print(2 * (numberOne + numberTwo));
     }
 }
