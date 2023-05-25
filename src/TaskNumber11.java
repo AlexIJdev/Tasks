@@ -1,26 +1,26 @@
 
-// Напишите программу, которая считывает три целых числа и выводит их произведение.
+// Пирожок в столовой стоит a рублей и b копеек. Определите, сколько рублей и копеек нужно заплатить
+// за n пирожков. Программа получает на вход три числа: a, b, n. Программа должна вывести два числа:
+// стоимость покупки в рублях и копейках.
 //
 // Sample Input:
-//      5 4 2
+//      10 15 2
 // Sample Output:
-//      40
+//      20 30
 //
 // Sample Input:
-//      0
-//      3
-//      78
+//      2 50 4
 // Sample Output:
-//      0
+//      10 0
 
 import java.util.Scanner;
 
 public class TaskNumber11 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int numberOne = sc.nextInt();
-        int numberTwo = sc.nextInt();
-        int numberThree = sc.nextInt();
-        System.out.println(numberOne * numberTwo * numberThree);
+        Scanner lineOne = new Scanner(System.in);
+        int ruble = lineOne.nextInt();
+        int penny = lineOne.nextInt();
+        int numberOfPies = lineOne.nextInt();
+        System.out.println((ruble * numberOfPies + penny * numberOfPies / 100) + " " + penny * numberOfPies % 100);
     }
 }

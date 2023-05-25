@@ -1,15 +1,31 @@
 
-// Пирожок в столовой стоит a рублей и b копеек. Определите, сколько рублей и копеек нужно заплатить за n пирожков.
-// Программа получает на вход три числа: a, b, n. Программа должна вывести два числа: стоимость покупки в рублях и копейках.
+// Улитка ползёт по вертикальному шесту высотой h метров, поднимаясь за день на a метров,
+// а за ночь спускаясь на b метров. На какой день улитка доползёт до вершины шеста?
+// Программа получает на вход натуральные числа h, a, b. Гарантируется, что a>b.
+// Программа должна вывести одно натуральное число.
+//
+// Sample Input:
+//      10
+//      3
+//      2
+// Sample Output:
+//      8
+//
+// Sample Input:
+//      20
+//      7
+//      3
+// Sample Output:
+//      5
 
 import java.util.Scanner;
 
 public class TaskNumber15 {
     public static void main(String[] args) {
         Scanner lineOne = new Scanner(System.in);
-        int ruble = lineOne.nextInt();
-        int penny = lineOne.nextInt();
-        int numberOfPies = lineOne.nextInt();
-        System.out.println((ruble * numberOfPies + penny * numberOfPies / 100) + " " + penny * numberOfPies % 100);
+        int height = lineOne.nextInt();
+        int heightCrawlUp = lineOne.nextInt();
+        int heightCrawlDown = lineOne.nextInt();
+        System.out.println(((height - heightCrawlDown) - 1) / (heightCrawlUp - heightCrawlDown) + 1);
     }
 }

@@ -2,8 +2,6 @@
 // Создайте две переменные: целого типа a и действительного b, равные 5 и 0.4 соответственно.
 // Выведите построчно на экран их сумму, разность, произведение и частное.
 
-import java.util.Scanner;
-
 public class TaskNumber6 {
     public static void main(String[] args) {
         int a = 5;

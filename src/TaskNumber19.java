@@ -1,17 +1,33 @@
 
-// Улитка ползёт по вертикальному шесту высотой h метров, поднимаясь за день на a метров,
-// а за ночь спускаясь на b метров. На какой день улитка доползёт до вершины шеста?
-// Программа получает на вход натуральные числа h, a, b. Гарантируется, что a>b.
-// Программа должна вывести одно натуральное число.
+// ВАЛЛ-И решил отметить день рождения и пригласил x друзей. На каждого гостя ему необходимо
+// приготовить 10 грамм заварки и по n пирожному. Килограмм чая на развес стоит t рублей,
+// а одно пирожное - k рублей. Во сколько обойдется ВАЛЛ-И чаепитие? Гарантируется, что все
+// числа в решения задачи окажутся целыми.
+// Входные данные: вводятся 4 целых неотрицательных числа:
+// x - количество приглашенных друзей;
+// t - стоимость килограмма чая;
+// k - стоимость одного пирожного;
+// n - количество пирожных.
+// Выходные данные: выведите одно целое число - ответ на задачу.
+//
+// Sample Input:
+//      3
+//      500
+//      30
+//      2
+//
+// Sample Output:
+//      195
 
 import java.util.Scanner;
 
 public class TaskNumber19 {
     public static void main(String[] args) {
-        Scanner lineOne = new Scanner(System.in);
-        int height = lineOne.nextInt();
-        int heightCrawlUp = lineOne.nextInt();
-        int heightCrawlDown = lineOne.nextInt();
-        System.out.println(((height - heightCrawlDown) - 1) / (heightCrawlUp - heightCrawlDown) + 1);
+        Scanner line = new Scanner(System.in);
+        int numbersFriends = line.nextInt();
+        int priseTea = line.nextInt();
+        int priseCake = line.nextInt();
+        int numbersCakes = line.nextInt();
+        System.out.println((int) ((numbersFriends * 0.01 * priseTea) + (numbersFriends * numbersCakes * priseCake)));
     }
 }
