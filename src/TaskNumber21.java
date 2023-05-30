@@ -1,18 +1,31 @@
 
-// Робот ВАЛЛ-И каждый день меняет пароль от своей учетной записи на обучающей платформе.
-// Ему нравится придумывать числа разной длины и суммировать их последние цифры.
-// К получившемуся значению он добавляет строчные согласные буквы, входящие в его имя на латинице.
-// Составьте программу для ВАЛЛ-И, которая позволяла бы ему придумывать 3 любых целых числа и
-// выдавала бы пароль на текущий день.
+// ВАЛЛ-И очень любит читать. В его книге n страниц и каждый день он читает по s страниц.
+// Составьте программу, которая считает, сколько страниц останется ВАЛЛ-И прочитать через 5 дней.
+// Входные данные: вводятся два целых неотрицательных числа:
+// n - количество страниц в книге;
+// s  - количество страниц, которые прочитывает ВАЛЛ-И каждый день.
+// Выходные данные: выведите на экран ответ на задачу: сколько страниц останется прочитать ВАЛЛ-И
+// через 5 дней.
+//
+// Sample Input:
+//      100
+//      10
+// Sample Output:
+//      50
+//
+// Sample Input:
+//      800
+//      20
+// Sample Output:
+//      700
 
 import java.util.Scanner;
 
 public class TaskNumber21 {
     public static void main(String[] args) {
-        Scanner lineOne = new Scanner(System.in);
-        int numberOne = lineOne.nextInt() % 10;
-        int numberTwo = lineOne.nextInt() % 10;
-        int numberThree = lineOne.nextInt() % 10;
-        System.out.println(numberOne + numberTwo + numberThree + "vll");
+        Scanner line = new Scanner(System.in);
+        int pagesOfTheBook = line.nextInt();
+        int pagesReadOnDay = line.nextInt();
+        System.out.println(pagesOfTheBook - pagesReadOnDay * 5);
     }
 }
