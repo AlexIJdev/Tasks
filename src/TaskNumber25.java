@@ -7,27 +7,24 @@
 // Выходные данные: выведите ответ на задачу.
 //
 // Sample Input:
-//        811
-//        2
+//      811
+//      2
+//  Sample Output:
+//      3
 //
-//        Sample Output:
-//        3
-//
-//
-//        Sample Input:
-//        315689
-//        10
-//
-//        Sample Output:
-//        19
+//  Sample Input:
+//      315689
+//      10
+// Sample Output:
+//      19
 
 import java.util.Scanner;
 
 public class TaskNumber25 {
     public static void main(String[] args) {
         Scanner line = new Scanner(System.in);
-        int pagesOfTheBook = line.nextInt();
-        int pagesReadOnDay = line.nextInt();
-        System.out.println(pagesOfTheBook - pagesReadOnDay * 5);
+        int numberOfVally = line.nextInt();
+        int increaseNumber = line.nextInt();
+        System.out.println((numberOfVally % 10) + increaseNumber);
     }
 }
