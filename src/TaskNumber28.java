@@ -1,30 +1,30 @@
 
-// ВАЛЛ-И, катаясь на лифте, заметил, что между двумя соседними этажами он проезжает за t  секунд. Составьте программу, помогающую ВАЛЛ-И рассчитать, за сколько секунд он поднимется на этаж с номером n.
-//
-// Входные данные: программа получает на вход два натуральных числа:
-// t - время в секундах, за которое лифт поднимается на один этаж, n - номер этажа, на который надо подняться ВАЛЛ-И
-//
-// Выходные данные: выведите ответ на задачу
-//
-// Sample Input:
-//        2
-//        5
-// Sample Output:
-//        8
+// ВВАЛЛ-И случайно забрел на ферму, где увидел лошадей и гусей. Лошадей он насчитал h штук, гусей - g штук.
+// Составьте программу, которая бы помогла ВАЛЛ-И узнать количество ног обитателей фермы.
+// Входные данные:
+// h - количество лошадей;
+// g - количество гусей.
+// Выходные данные: выведите ответ на задачу.
 //
 // Sample Input:
-//        5
-//        2
+//      8
+//      4
 // Sample Output:
-//        5
+//      40
+//
+// Sample Input:
+//      2
+//      3
+// Sample Output:
+//      14
 
 import java.util.Scanner;
 
 public class TaskNumber28 {
     public static void main(String[] args) {
         Scanner line = new Scanner(System.in);
-        int timeToClimbOneFloor = line.nextInt();
-        int numberOfFloor = line.nextInt();
-        System.out.println((numberOfFloor - 1) * timeToClimbOneFloor);
+        int numberOfHorses = line.nextInt();
+        int numberOfGooses = line.nextInt();
+        System.out.println(numberOfHorses * 4 + numberOfGooses * 2);
     }
 }

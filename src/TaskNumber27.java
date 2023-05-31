@@ -1,32 +1,30 @@
 //
-// ВАЛЛ-И встретил n детей и хочет разделить между ними k яблок так, чтобы каждому досталось поровну.
-// Не делящийся остаток он собирается отнести ЕВЕ. Сколько яблок достанется каждому ребенку?
-// Сколько яблок получит ЕВА? Результат выведите в одной строке через пробел в указанном порядке.
-//
-// Входные данные: два натуральных числа:
-// n - количество детей
-// k - количество яблок
-//
-// Выходные данные: выведите ответ на задачу:
-// Sample Input:
-//        2
-//        6
-// Sample Output:
-//        3 0
+// ВАЛЛ-И за 1 день выучивает n иностранных слов. Составьте программу, которая рассчитает, сколько
+// иностранных слов выучит робот за d дней.
+// Входные данные:
+// n - количество слов;
+// d - количество дней.
+// Выходные данные: выведите ответ на задачу.
 //
 // Sample Input:
-//        4
-//        25
+//      8
+//      3
 // Sample Output:
-//        6 1
+//      24
+//
+// Sample Input:
+//      10
+//      10
+// Sample Output:
+//      100
 
 import java.util.Scanner;
 
 public class TaskNumber27 {
     public static void main(String[] args) {
         Scanner line = new Scanner(System.in);
-        int numbersOfChildren = line.nextInt();
-        int numbersOfApple = line.nextInt();
-        System.out.println((numbersOfApple - (numbersOfApple % numbersOfChildren)) / numbersOfChildren + " " + (numbersOfApple % numbersOfChildren));
+        int numberOfWords = line.nextInt();
+        int numberOfDay = line.nextInt();
+        System.out.println(numberOfWords * numberOfDay);
     }
 }

@@ -1,31 +1,40 @@
 
-// Робот ВАЛЛ-И любит играть в такую игру: он называет натуральное число, а ЕВА берет
-// последнюю цифру этого числа и увеличивает на n. Какое число получила ЕВА?
-//
-// Входные данные: программа получает на вход два натуральных числа:
-// x - число, которое загадывает ВАЛЛ-И, n - на сколько увеличивается последняя цифра.
-//
-// Выходные данные: выведите ответ на задачу:
-//
-// Sample Input:
-//      811
-//      2
-// Sample Output:
-//      3
+// ВАЛЛ-И и ЕВА решили встретиться и выехали навстречу друг другу. Скорость ВАЛЛ-И составляет x км/ч, а
+// ЕВЫ - y км/ч. Когда они встретились, то ВАЛЛ-И сообщил, что был в пути t часов, а ЕВА сказала, что
+// потратила на дорогу m часов. Составьте программу, которая бы вычислила, какое расстояние было между
+// ВАЛЛ-И и ЕВОЙ в момент их отправления.
+// Входные данные:
+// x - скорость ВАЛЛ-И;
+// y - скорость ЕВЫ;
+// t - время ВАЛЛ-И;
+// m - время ЕВЫ.
+// Выходные данные: выведите ответ на задачу.
 //
 // Sample Input:
-//      315689
 //      10
+//      5
+//      2
+//      3
 // Sample Output:
-//      19
+//      35
+//
+// Sample Input:
+//      60
+//      50
+//      3
+//      4
+// Sample Output:
+//      380
 
 import java.util.Scanner;
 
 public class TaskNumber29 {
     public static void main(String[] args) {
         Scanner line = new Scanner(System.in);
-        int numberOfVally = line.nextInt();
-        int increaseNumber = line.nextInt();
-        System.out.println((numberOfVally % 10) + increaseNumber);
+        int speedOfVally = line.nextInt();
+        int speedOfEva = line.nextInt();
+        int timeOfVally = line.nextInt();
+        int timeOfEva = line.nextInt();
+        System.out.println(speedOfVally * timeOfVally + speedOfEva * timeOfEva);
     }
 }
