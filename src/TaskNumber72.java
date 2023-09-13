@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class TestNumber72 {
+public class TaskNumber72 {
     public static void main(String[] args) {
         int[] mass = new int[2];
         mass[0] = 6;
