@@ -16,21 +16,21 @@ import java.util.TreeMap;
 
 public class Solutions {
     /*
-    1. Выделяем входные параметры: путь к корневой папка + путь к результирующему файлу;
+    1. Выделяем входные параметры: путь к корневой папке + путь к результирующему файлу;
     2. Создание метода по обходу файлов в корневой директории и сбора их содержимого:
        - EnumSet - специализированный набор для хранения элементов перечислений (enum);
        - FileVisitOption - перечисление (enum) в Java, которое используется для настройки
        поведения при обходе файловой системы с помощью методов вроде Files.walkFileTree();
        - FOLLOW_LINKS - обход дерева по символическим ссылкам (в глубину);
        - NOFOLLOW_LINKS - обход дерева без символических ссылок (просто по файлам).
-       - Paths.get(root) - путь к корневой парке в методе обхода walkFileTree;
+       - Paths.get(root) - путь к корневой папке в методе обхода walkFileTree();
        - options - поведение обхода;
        - maxDepth - глубина вложенности;
        - visitor - объект, реализующий интерфейс FileVisitor<Path>, который содержит методы,
        вызываемые при посещении файлов и директорий (например, visitFile, preVisitDirectory,
        postVisitDirectory, visitFileFailed). Здесь - собственная реализация - класс GetFiles;
     3. Создание пользовательского класса по обходу файлов - реализация SimpleFileVisitor:
-       - SimpleFileVisitor - ласс в Java, реализующий интерфейс FileVisitor, который предназначен
+       - SimpleFileVisitor - класс в Java, реализующий интерфейс FileVisitor, который предназначен
          для обхода файловой системы;
        - Path - интерфейс, представляющий путь к файлу или директории в файловой системе;
        - BasicFileAttributes - интерфейс, содержащий базовые атрибуты файла: размер, дата последнего
@@ -45,8 +45,10 @@ public class Solutions {
     public static Map<String, byte[]> getFileTree(String root) throws IOException {
         // мапа с файлами и их содержимым
         Map<String, byte[]> result = new TreeMap<>();
+
         // опция поведения обхода дерева файлов
         EnumSet<FileVisitOption> options = EnumSet.of(FileVisitOption.FOLLOW_LINKS);
+
         // реализация самого обхода
         Files.walkFileTree(Paths.get(root), options, 20, new GetFiles(result));
 
